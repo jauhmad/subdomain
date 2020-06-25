@@ -1,25 +1,7 @@
 <?php
-$db['default'] = array(
-    'dsn'          => '',
-    'hostname'     => 'localhost',
-    'username'     => 'perdagan_user',
-    'password'     => 'Su6A3(f[avQ%',
-    'database'     => 'perdagan_db',
-    'dbdriver'     => 'mysql',
-    'dbprefix'     => '',
-    'pconnect'     => FALSE,
-    'db_debug'     => (ENVIRONMENT !== 'production'),
-    'cache_on'     => FALSE,
-    'cachedir'     => '',
-    'char_set'     => 'utf8',
-    'dbcollat'     => 'utf8_general_ci',
-    'swap_pre'     => '',
-    'encrypt'      => FALSE,
-    'compress'     => FALSE,
-    'stricton'     => FALSE,
-    'failover'     => array(),
-    'save_queries' => TRUE,
-);
+$system_path = 'system';
+define('BASEPATH', $system_path);
+include '../application/config/database.php';
 
 $DBHOST= "localhost";
 $DBUSER= $db['default']['username'];
