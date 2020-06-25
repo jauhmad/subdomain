@@ -73,5 +73,5 @@ if ($jum > 0) {
 } else {
     echo "0 results";
 }
-//$conn->close();
-            ?>
+mysql_close();
+?>
